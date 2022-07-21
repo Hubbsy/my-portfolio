@@ -10,8 +10,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="App text-gray-400 bg-gray-900 body-font">
-        <span className="" >what is this</span>
+    <div className="App text-gray-400 bg-gray-900 body-font scroll-smooth">
         <Navbar/>
         <About/>
         <Projects/>
