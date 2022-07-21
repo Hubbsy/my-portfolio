@@ -1,6 +1,5 @@
 import React from "react";
 import { ClipboardIcon} from "@heroicons/react/solid";
-import {CodeIcon} from "@heroicons/react/solid";
 
 export default function Contact() {
     return (
