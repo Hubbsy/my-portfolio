@@ -5,10 +5,12 @@ export const skills = [
     "Express.JS",
     "HTML",
     "CSS",
+    "TailWindCSS",
+    "Git",
     "Non-Relational DBMS",
     "Relational DBMS",
     "AWS (Lambda, S3, DynamoDB)",
     "Docker",
     "Redis",
-    "REST API's"
+    "REST API",
 ]

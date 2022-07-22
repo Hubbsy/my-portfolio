@@ -6,12 +6,13 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-
+import Logo from "./components/Logo";
 
 function App() {
   return (
-    <div className="App text-gray-400 bg-gray-900 body-font scroll-smooth">
+    <div className="App text-main bg-background body-font scroll-smooth">
         <Navbar/>
+        {/*<Logo/>*/}
         <About/>
         <Projects/>
         <Skills/>

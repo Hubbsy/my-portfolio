@@ -4,9 +4,16 @@ module.exports = {
   theme: {
     extend: {
       borderRadius: {
-        extraLarge: '11rem'
+        extraLarge: '9rem'
       }
     },
+    colors: {
+        main: "#13293D",
+        background: "#E0E0E2",
+        navbar: "#416788",
+        buttons: "#81D2C7",
+        skills: "#B5BAD0"
+    }
   },
   plugins: [],
 }
