@@ -20,7 +20,7 @@ export default function Logo() {
     }, []);
 
     return (
-        <div className={"logo-container sm:w-10"} ref={bgRef}>
+        <div className={"logo-container"} ref={bgRef}>
             <img className={"logo-solid "} ref={solidLogoRef} alt={"Logo JWH"} src={"./assets/ColorLogoNoBG.svg"} />
 
 

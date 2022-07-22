@@ -25,7 +25,7 @@ svg {
   bottom: auto;
   left: 0;
   margin: auto;
-  opacity: 0;
+  /*opacity: 0;*/
   width: 100%;
   z-index: 1;
 }
@@ -35,21 +35,32 @@ svg {
   stroke-width:1;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 690px) {
   .logo-container {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin: 8rem 10rem 8rem 20%;
   }
   .about-info {
-    padding-top: 10rem;
+    padding-top: 12rem;
   }
 
 }
 
-@media (min-width: 640px) and (max-width: 1360px) {
+@media (min-width: 1050px) and (max-width: 1360px) {
   .logo-container {
-    margin: 8rem 10rem 8rem 20%;
+    margin: 8rem 10rem 8rem 10%;
+    width: 500px;
+  }
+  /*.about-info {*/
+  /*  padding-top: 20rem;*/
+  /*  width: 100%;*/
+  /*}*/
+}
+
+@media (min-width: 690px) and (max-width: 1050px) {
+  .logo-container {
+    margin: 8rem 10rem 8rem 15%;
   }
   .about-info {
     padding-top: 20rem;
