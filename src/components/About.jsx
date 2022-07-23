@@ -8,16 +8,14 @@ export default function About() {
                 <Logo />
                 <div className=" about-info w-1/2  flex flex-col  md:text-center mb-16 md:mb-0 items-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        Hello, My name is Justin,
-                        <br className="hidden lg:inline-block" />
-                        my GamerTag is Hubbsy
+                        Hello, My name is Justin
                     </h1>
                     <p className="mb-8 leading-relaxed">
                         I am a Full Stack Software Engineer with a passion for Music and the Outdoors.
                         <br/>
                         I am interested in any and all things Tech.
                         <br/>
-                        Let's link up for a Jam Session or connect on Discord for some gaming!
+                        Let's link up for a Jam Session or connect on Discord for some gaming, my GamerTag is Hubbsy!
                     </p>
                     <div className="flex justify-center">
                         <a

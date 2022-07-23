@@ -11,8 +11,8 @@ export default function Contact() {
                 </h2>
             </div>
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-1/2 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 pt-5 px-10 pb-10 flex items-end justify-center relative">
-                    <img alt={"Hire me"} src="./assets/work.svg"/>
+                <div className="lg:w-1/2 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 pt-5 px-10 pb-10 flex items-center justify-center relative">
+                    <img alt={"Hire me"} src="./assets/profile_pic.jpg"/>
                 </div>
                 <form
                     netlify

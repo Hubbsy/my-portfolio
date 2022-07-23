@@ -6,33 +6,39 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  transform: rotate(-15deg) !important;
   left: 0;
+  opacity: 0;
   margin: 8rem 10rem 8rem 10%;
 }
 
-svg {
+.logo-svg {
   width: 100%;
   height: auto;
   bottom: 0;
-
+  transform: rotateZ(-15deg) !important;
 }
 
 .logo-solid {
   position: absolute;
   top: auto;
-  right: 0;
+  right: auto;
   bottom: auto;
   left: 0;
   margin: auto;
-  /*opacity: 0;*/
+  opacity: 0;
   width: 100%;
+  transform: rotateZ(-15deg) !important;
   z-index: 1;
 }
 
-.svg-container {
+/*.svg-container {*/
+/*  stroke: black;*/
+/*  stroke-width:10;*/
+/*}*/
+
+.strokePath {
+  stroke-width: 30;
   stroke: #13293D;
-  stroke-width:1;
 }
 
 @media (max-width: 690px) {
