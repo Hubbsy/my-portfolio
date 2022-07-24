@@ -1,11 +1,11 @@
-import Logo from "./Logo";
+// import Logo from "./Logo";
 
 
 export default function About() {
     return (
         <section id="about">
-            <div className=" justify-end container mx-auto flex px-10 py-20 md:flex-row flex-col items-center text-center">
-                <Logo />
+            <div className=" justify-end container mx-auto flex px-10 sm:pr-5 py-20 md:flex-row flex-col items-center text-center ">
+                {/*<Logo />*/}
                 <div className=" about-info w-1/2  flex flex-col  md:text-center mb-16 md:mb-0 items-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                         Hello, My name is Justin
