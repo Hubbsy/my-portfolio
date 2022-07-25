@@ -3,12 +3,13 @@ import {gsap} from "gsap-trial";
 import {DrawSVGPlugin} from "gsap-trial/DrawSVGPlugin";
 
 
-export default function Logo({setFirstLoadStatus, appRef}) {
+export default function Logo({setFirstLoadStatus}) {
 
     let bgRef = useRef(null);
     let solidLogoRef = useRef(null);
     let outlineLogoRef1 = useRef(null);
     let gsapTimelineRef = useRef( gsap.timeline());
+    let svgContainerRef = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(DrawSVGPlugin);
@@ -23,7 +24,6 @@ export default function Logo({setFirstLoadStatus, appRef}) {
                 delay: 1,
                 duration: 5,
                 onComplete: args => {
-                    bgRef.current.classList.add("fadeOut");
                     setFirstLoadStatus(args);
                 }
             });
@@ -31,13 +31,13 @@ export default function Logo({setFirstLoadStatus, appRef}) {
 
     return (
         <div className={"logo-container items-center justify-center"} ref={bgRef}>
-            <img className={"logo-solid "} ref={solidLogoRef} alt={"Logo JWH"} src={"./assets/jwhLogo.svg"} />
+            <img className={"logo-solid"} ref={solidLogoRef} alt={"Logo JWH"} src={"./assets/jwhLogo.svg"} />
 
             <svg className={"logo-svg items-center justify-center"} version="1.0" xmlns="http://www.w3.org/2000/svg"
                  width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
                  preserveAspectRatio="xMidYMid meet">
 
-                <g className={"svg-container"} transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+                <g ref={svgContainerRef} className={"svg-container"} transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
                    fill="none" stroke="none">
                     <path fill={"none"} stroke={"none"} className={'strokePath'} ref={outlineLogoRef1} d="M3842 3663 c-18 -9 -38 -25 -43 -36 -9 -16 -58 -392 -59 -448 0 -12
                         -19 -19 -82 -27 -139 -20 -126 -35 -110 135 10 109 11 156 3 183 -15 51 -75
