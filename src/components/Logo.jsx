@@ -22,7 +22,7 @@ export default function Logo({setFirstLoadStatus}) {
         gsap.fromTo(solidLogoRef.current, { opacity: 0 }, {
                 opacity: 1,
                 delay: 1,
-                duration: 5,
+                duration: 3,
                 onComplete: args => {
                     setFirstLoadStatus(args);
                 }
