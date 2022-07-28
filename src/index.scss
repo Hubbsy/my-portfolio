@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 html {
   scroll-behavior: smooth;
+  background-color: #E0E0E2;
 }
 
 body {
@@ -12,9 +15,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E0E0E2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.loader-hidden {
+  display: none;
 }

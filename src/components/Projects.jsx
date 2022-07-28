@@ -10,7 +10,7 @@ export default function Projects() {
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-                        Some cool things I have Built
+                        Some cool things I have built
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                         Below are some fun projects I have built in my spare time. Take them for a spin!

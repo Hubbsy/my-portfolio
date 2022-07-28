@@ -1,12 +1,13 @@
-import React from "react";
+import React, {useState, useEffect, useRef} from "react";
 import { ClipboardIcon} from "@heroicons/react/solid";
 
 export default function Contact() {
 
-    const [name, setName] = React.useState("");
-    const [email, setEmail] = React.useState("");
-    const [message, setMessage] = React.useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
+    //  Encode data for Netlify url request
     function encode(data) {
         return Object.keys(data)
             .map(
@@ -27,7 +28,8 @@ export default function Contact() {
     }
 
     return (
-        <div id="contact" className="relative">
+
+        <main id="contact" className="relative">
             <div className="flex flex-col w-full px-5 py-20 mx-auto text-center">
                 <ClipboardIcon className="mx-auto inline-block w-10 mb-4" />
                 <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
@@ -35,17 +37,17 @@ export default function Contact() {
                 </h2>
             </div>
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-1/2 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 pt-5 px-10 pb-10 flex items-center justify-center relative">
-                    <img alt={"Hire me"} src="./assets/profile_pic.jpg"/>
+                <div className="lg:w-1/2 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 pt-5 px-10 pb-10 flex items-start justify-center relative">
+                    <img className={"w-1/2 rounded-full border-8"} alt={"Me as myself"} src="./assets/profile_pic.jpg"/>
                 </div>
                 <form
-                    netlify
+                    netlify={"true"}
                     name="contact"
                     onSubmit={handleSubmit}
-                    className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 text-center">
                     <p className="leading-relaxed mb-5 pb-10">
-                        If you are looking for new talent or need a hard working Software Engineer, Let's connect!  Otherwise I am always
-                        interested in possible collaboration on new and exciting projects.
+                        If you are looking for new talent or need a hard working Software Engineer, Let's connect! I am always
+                        interested in collaboration on new and exciting projects or just having a chat.
                     </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -91,7 +93,7 @@ export default function Contact() {
                     </button>
                 </form>
             </div>
-        </div>
+        </main>
     );
 }
 

@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import {CSSTransition} from "react-transition-group";
 
 import Logo from "./Logo";
-import Home from "./Home";
 import Navbar from "./Navbar";
 import {Outlet} from "react-router-dom";
 
@@ -21,7 +20,6 @@ export default function Layout() {
                     <Outlet />
                 </div>
             </CSSTransition>
-
         </>
     );
 }
