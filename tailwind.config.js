@@ -12,7 +12,8 @@ module.exports = {
         background: "#E0E0E2",
         navbar: "#416788",
         buttons: "#81D2C7",
-        skills: "#B5BAD0"
+        skills: "#B5BAD0",
+        footer: "#181818"
     },
       variants: {
           extend: {

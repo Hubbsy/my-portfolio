@@ -23,12 +23,8 @@ export default function About() {
                         Let's link up for a Jam Session, I play percussion, or connect on Discord for some gaming.
                     </p>
                     <div className="flex justify-center">
-                        <a
-                            href="#projects"
-                            className="inline-flex text-gray-400 bg-skills border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                            Cool Stuff
-                        </a>
-                        <Link to={"/contact#contact"} className={" ml-4 inline-flex text-white bg-buttons border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"}>Contact Me</Link>
+                        <Link to={"/gaming#gaming"} className={" inline-flex text-gray-400 bg-skills border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"}>Gaming</Link>
+                        <Link to={"/contact#contact"} className={" ml-4 inline-flex text-white bg-buttons border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"}>Contact</Link>
                     </div>
                 </div>
             </div>

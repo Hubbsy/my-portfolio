@@ -2,9 +2,32 @@ $primary-color: #13293D;
 @import "~animate.css/animate.css";
 @import '~loaders.css/src/animations/ball-beat.scss';
 
+.footerNav {
+  color: #4d4d4e;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  a {
+    &:hover {
+      color: #ffd700;
+
+      svg {
+        color: #ffd700;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 /*
 /////////////////////  Loader
 */
+i {
+  transition: all 0.3s ease-out;
+}
 
 .loader-active {
   display: block;
@@ -24,8 +47,6 @@ $primary-color: #13293D;
 .loader-hidden {
   display: none;
 }
-
-
 
 /*
 //////////////////// Logo

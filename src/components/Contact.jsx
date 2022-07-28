@@ -37,7 +37,7 @@ export default function Contact() {
                 </h2>
             </div>
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="group lg:w-1/2 md:w-1/2 bg-gray-900 overflow-hidden sm:mr-10 pt-5 px-10 pb-10 flex items-start justify-center relative">
+                <div className="group lg:w-1/2 md:w-1/2 bg-gray-900 overflow-hidden sm:mr-10 pt-5 px-10 pb-10 flex items-center justify-center relative">
                     <img className={"group-hover:invisible w-full sm:w-full lg:w-1/2 rounded-full border-8 relative"} alt={"Me as myself"} src="./assets/profile-pic.png"/>
                     <img className={"invisible group-hover:visible w-full sm:w-full lg:w-1/2 rounded-full border-8 absolute"} alt={"Me and Layla"} src="./assets/meAndLayla.png"/>
                 </div>
