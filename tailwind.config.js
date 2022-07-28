@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       borderRadius: {
         extraLarge: '9rem'
-      }
+      },
     },
     colors: {
         main: "#13293D",
@@ -13,7 +13,12 @@ module.exports = {
         navbar: "#416788",
         buttons: "#81D2C7",
         skills: "#B5BAD0"
-    }
+    },
+      variants: {
+          extend: {
+              visibility: ["group-hover"],
+          },
+      },
   },
   plugins: [],
 }
