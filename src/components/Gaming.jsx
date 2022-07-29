@@ -17,7 +17,7 @@ export default function Gaming() {
                 </h2>
                 <br/>
                 <h2 className={"sm:text-2xl text-1xl text-navText"}>
-                    These are The Dead Rabbitz
+                    These are The Dead Rabbits
                 </h2>
             </div>
             <div className="container px-5 py-5 mx-auto flex sm:flex-nowrap flex-wrap justify-center" >
@@ -29,7 +29,7 @@ export default function Gaming() {
                 <div className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 text-center">
                     <div className=" mb-5 text-navText">
                         <h2>Join us!</h2>
-                        Dead Rabbitz are gamers, custom PC rig enthusiasts and all around nerds.  If you are looking for
+                        Dead Rabbits are gamers, custom PC rig enthusiasts and all around nerds.  If you are looking for
                         a good group of people to game with, look no further.  My GamerTag is Hubbsy.  Click the Discord icon below to wreak havoc in the digital realm, make some friends and have a few laughs!
                     </div>
                     <img className={"w-full rounded-full"} alt={"Dead Rabbitz"} src="./assets/deadRabbits.png"/>
