@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import {CSSTransition} from "react-transition-group";
 
 import Logo from "./Logo";
@@ -8,11 +8,15 @@ import {Outlet} from "react-router-dom";
 
 export default function Layout() {
     const [firstLoad, setFirstLoadStatus] = useState(true);
+    const logoTransitionRef = useRef(null);
 
     return (
         <>
-            <CSSTransition in={firstLoad} timeout={1000} classNames={"logo"} unmountOnExit>
-                <Logo setFirstLoadStatus={setFirstLoadStatus}/>
+            <CSSTransition ref={logoTransitionRef} in={firstLoad} timeout={1000} classNames={"logo"} unmountOnExit>
+                <div ref={logoTransitionRef}>
+                    <Logo setFirstLoadStatus={setFirstLoadStatus}/>
+                </div>
+
             </CSSTransition>
 
             <CSSTransition in={!firstLoad} timeout={1000} classNames={"logo"} mountOnEnter unmountOnExit>

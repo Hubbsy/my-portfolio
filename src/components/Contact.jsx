@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState} from "react";
 import { ClipboardIcon} from "@heroicons/react/solid";
 import {HashLink as Link} from "react-router-hash-link";
 
@@ -32,7 +32,7 @@ export default function Contact() {
 
         <main id="contact" className="relative">
             <div className={"sm:hidden w-1/4 absolute py-5"}>
-                <Link to={"/#about"} className=" text-xl"><img src={"./assets/jwhLogo.svg"}/></Link>
+                <Link to={"/#about"} className=" text-xl"><img src={"./assets/jwhLogo.svg"} alt={"JWH"}/></Link>
             </div>
             <div className="flex flex-col w-full px-5 pt-20 sm:py-5 mx-auto text-center">
                 <ClipboardIcon className="mx-auto inline-block w-10 mb-4" />

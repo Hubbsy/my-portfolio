@@ -1,15 +1,15 @@
-import React, {useState, useEffect, useRef} from "react";
+import React from "react";
 import { DesktopComputerIcon} from "@heroicons/react/solid";
 import {HashLink as Link} from "react-router-hash-link";
 
 export default function Gaming() {
 
     return (
-
         <main id="gaming" className="relative">
             <div className={"sm:hidden w-1/4 absolute py-5"}>
-                <Link to={"/#about"} className=" text-xl"><img src={"./assets/jwhLogo.svg"}/></Link>
+                <Link to={"/#about"} className=" text-xl"><img src={"./assets/jwhLogo.svg"} alt={"JWH"}/></Link>
             </div>
+
             <div className="flex flex-col w-full px-5 py-20 sm:py-5 mx-auto text-center">
                 <DesktopComputerIcon className="mx-auto inline-block w-10 mb-4" />
                 <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font ">
@@ -30,11 +30,10 @@ export default function Gaming() {
                     <div className=" mb-5 ">
                         <h2>Join us!</h2>
                         Dead Rabbitz, a group of PC gamers, custom rig enthusiasts and all around nerds.  If you are looking for
-                        a good group of people to game with, look no further.  Click the Discord link to wreak havoc in the digital realm, make some friends and have a few laughs!
+                        a good group of people to game with, look no further.  My GamerTag is Hubbsy.  Click the Discord icon below to wreak havoc in the digital realm, make some friends and have a few laughs!
                     </div>
                     <img className={"w-full rounded-full"} alt={"Dead Rabbitz"} src="./assets/DeadRabbits.jpg"/>
                 </div>
-
             </div>
         </main>
     );

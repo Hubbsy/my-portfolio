@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import {HashLink as Link} from "react-router-hash-link";
 
 export default function Navbar() {
 

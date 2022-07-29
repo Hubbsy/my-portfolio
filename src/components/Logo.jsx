@@ -17,8 +17,8 @@ export default function Logo({setFirstLoadStatus}) {
         gsapTimelineRef.current.to(bgRef.current, {
             duration: .5,
             opacity: 1
-        })
-            .fromTo(outlineLogoRef1.current, {drawSVG: "0"}, {drawSVG: "100%", duration: 15});
+        }).fromTo(outlineLogoRef1.current, {drawSVG: "0"}, {drawSVG: "100%", duration: 15});
+
         gsap.fromTo(solidLogoRef.current, { opacity: 0 }, {
                 opacity: 1,
                 delay: 1,
@@ -30,7 +30,7 @@ export default function Logo({setFirstLoadStatus}) {
     }, [setFirstLoadStatus]);
 
     return (
-        <div className={"logo-container items-center justify-center"} ref={bgRef}>
+        <div  className={"logo-container items-center justify-center"} ref={bgRef}>
             <img className={"logo-solid"} ref={solidLogoRef} alt={"Logo JWH"} src={"./assets/jwhLogo.svg"} />
 
             <svg className={"logo-svg items-center justify-center"} version="1.0" xmlns="http://www.w3.org/2000/svg"
