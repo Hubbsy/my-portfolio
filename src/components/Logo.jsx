@@ -2,7 +2,6 @@ import React, {useRef, useEffect} from "react";
 import {gsap} from "gsap";
 import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
 
-
 export default function Logo({setFirstLoadStatus}) {
 
     let bgRef = useRef(null);
