@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from "react";
 import {gsap} from "gsap-trial";
-import {DrawSVGPlugin} from "gsap-trial/DrawSVGPlugin";
+import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
 
 
 export default function Logo({setFirstLoadStatus}) {
