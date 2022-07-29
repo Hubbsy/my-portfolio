@@ -18,8 +18,8 @@ export default function Layout() {
             <CSSTransition in={!firstLoad} timeout={1000} classNames={"logo"} mountOnEnter unmountOnExit>
                 <div className={"App text-main bg-background body-font items-center justify-center scroll-smooth"}>
                     <Navbar />
-                    <Outlet />
                     <Footer />
+                    <Outlet />
                 </div>
             </CSSTransition>
         </>

@@ -14,14 +14,11 @@ export default function About() {
                     <h1 className="title-font sm:text-2xl text-1xl mb-4 font-medium text-white">
                         Created by Justin W. Hubbell
                     </h1>
-                    <p className="mb-8 leading-relaxed">
-                        Full Stack Software Engineer with a passion for creating new things, making Music and enjoying the Outdoors
-                        <br/>
-                        Interested in any and all things Tech, getting the canoe on the water whenever possible
-                        and listening to live music.
-                        <br/>
-                        Let's link up for a Jam Session, I play percussion, or connect on Discord for some gaming.
-                    </p>
+                    <div className="mb-8 leading-relaxed">
+                        <h2 className={"w-full pb-5"}>Full Stack Software Engineer</h2>
+                        <h2 className={"w-full pb-5"}>A passion for the outdoors and getting the canoe on the water whenever possible</h2>
+                        <h2 className={"w-full"}>Let's link up for a Jam Session, I play percussion, or connect on Discord for some gaming.</h2>
+                    </div>
                     <div className="flex justify-center">
                         <Link to={"/gaming#gaming"} className={" inline-flex text-gray-400 bg-skills border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"}>Gaming</Link>
                         <Link to={"/contact#contact"} className={" ml-4 inline-flex text-white bg-buttons border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"}>Contact</Link>

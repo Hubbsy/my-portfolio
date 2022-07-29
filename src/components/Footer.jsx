@@ -6,7 +6,7 @@ import {HashLink as Link} from "react-router-hash-link";
 export default function Navbar() {
 
     return (
-        <footer className=" bg-footer z-10 fixed bottom-0 left-0 right-0">
+        <footer className=" bg-footer z-10 fixed bottom-0 left-0 right-0 flex flex-row">
             <div className="footerNav container mx-auto flex flex-wrap sm:font-small p-2 flex-row items-center justify-end">
                 <a
                     href="https://discord.gg/a7FTaZP9rS"

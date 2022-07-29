@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import { ClipboardIcon} from "@heroicons/react/solid";
+import {HashLink as Link} from "react-router-hash-link";
 
 export default function Contact() {
 
@@ -30,7 +31,10 @@ export default function Contact() {
     return (
 
         <main id="contact" className="relative">
-            <div className="flex flex-col w-full px-5 py-20 mx-auto text-center">
+            <div className={"sm:hidden w-1/4 absolute py-5"}>
+                <Link to={"/#about"} className=" text-xl"><img src={"./assets/jwhLogo.svg"}/></Link>
+            </div>
+            <div className="flex flex-col w-full px-5 pt-20 sm:py-5 mx-auto text-center">
                 <ClipboardIcon className="mx-auto inline-block w-10 mb-4" />
                 <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                     Let's work together
@@ -45,9 +49,9 @@ export default function Contact() {
                     netlify={"true"}
                     name="contact"
                     onSubmit={handleSubmit}
-                    className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 text-center">
+                    className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full pb-5 md:py-8 mt-8 md:mt-0 text-center">
                     <p className="leading-relaxed mb-5 pb-10">
-                        If you are looking for new talent or need a hard working Software Engineer, Let's connect! I am always
+                        If you are looking for new talent or need a hard working Software Engineer based in Austin TX. Let's connect! I am always
                         interested in collaboration on new and exciting projects or just having a chat.
                     </p>
                     <div className="relative mb-4">

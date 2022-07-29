@@ -16,11 +16,11 @@ export default function Navbar() {
                 </nav>
                 <img className="w-4 h-4 ml-3" alt={"gaming"} src={"./assets/gamepad.svg"}/>
                 <nav className={"font-medium pr-5"}>
-                    <Link to={"/gaming#gaming"}  className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-center">Gaming</Link>
+                    <Link to={"/gaming"}  className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-center">Gaming</Link>
                 </nav>
                 <MailIcon className="w-4 h-4 ml-3" />
                 <nav className={"font-medium"}>
-                    <Link to={"/contact#contact"}  className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-center">Contact Me</Link>
+                    <Link to={"/contact"}  className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-center">Contact</Link>
                 </nav>
 
             </div>
