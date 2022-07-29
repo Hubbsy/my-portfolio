@@ -13,10 +13,7 @@ export default function Layout() {
     return (
         <>
             <CSSTransition ref={logoTransitionRef} in={firstLoad} timeout={1000} classNames={"logo"} unmountOnExit>
-                <div ref={logoTransitionRef}>
-                    <Logo setFirstLoadStatus={setFirstLoadStatus}/>
-                </div>
-
+                <Logo setFirstLoadStatus={setFirstLoadStatus}/>
             </CSSTransition>
 
             <CSSTransition in={!firstLoad} timeout={1000} classNames={"logo"} mountOnEnter unmountOnExit>

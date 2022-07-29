@@ -8,12 +8,17 @@ module.exports = {
       },
     },
     colors: {
-        main: "#13293D",
-        background: "#E0E0E2",
-        navbar: "#416788",
-        buttons: "#81D2C7",
-        skills: "#B5BAD0",
-        footer: "#181818"
+        main: "#F8EEE7",
+        background: "#94618E",
+        navbar: "#94618E",
+        navText:"#231f20",
+        navBottom: "#E76F51",
+        buttonsContact: "none",
+        buttonsGaming: "none",
+        buttonText: "white",
+        buttonsHover: "#F8EEE7",
+        skills: "#F4DECB",
+        footer: "#49274A"
     },
       variants: {
           extend: {

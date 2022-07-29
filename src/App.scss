@@ -7,12 +7,24 @@ $primary-color: #13293D;
   text-decoration: none;
   a {
     &:hover {
-      color: #ffd700;
+      color: white;
 
-      svg {
-        color: #ffd700;
+      svg#linkedin {
+        color: #0077b5;
+      }
+      svg#github {
+        color: white;
+      }
+      svg#discord {
+        color: #7289da;
       }
     }
+  }
+}
+
+.headerNav {
+  svg {
+    color: black;
   }
 }
 
@@ -26,7 +38,7 @@ i {
 .loader-active {
   display: block;
   position: absolute;
-  background: #E0E0E2;
+  background: #94618E;
   left: 0;
   right: 0;
   margin: auto;
